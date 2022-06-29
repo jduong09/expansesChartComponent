@@ -8,7 +8,7 @@ body {
 
 /* Main */
 .expanse-report-container {
-  width: 90%;
+  width: 338px;
   margin: 4rem auto;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@ body {
 #graph > ul > li {
   display: flex;
   flex-direction: column;
-  width: 12%;
+  width: 35px;
   text-align: center;
   font-size: 14px;
   color:hsl(28, 10%, 53%);
@@ -155,5 +155,18 @@ body {
   display: block;
 }
 
+@media (min-width: 576px) {
+  .expanse-report-container {
+    width: 475px;
+    margin: 0;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-
+  #graph > ul > li {
+    width: 45px;
+  }
+}
