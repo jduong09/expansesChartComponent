@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <main>
+    <div class="expanse-report-container">
+      <div class="current-balance">
+        <div>
+          My balance
+          <span>$921.48</span>
+        </div>
+        <div class="balance-icon">
+          <span id="inner-circle"></span>
+        </div>
+      </div>
+      <div class="graph-container">
+        <h2>Spending - Last 7 days</h2>
+        <div id="graph">
+          <ul>
+            <li id="monday">
+              <div class="bar"></div>
+              mon
+            </li>
+            <li id="tuesday">
+              <div class="bar"></div>
+              tue
+            </li>
+            <li id="wednesday">
+              <div class="bar"></div>
+              wed
+            </li>
+            <li id="thursday">
+              <div class="bar"></div>
+              thu
+            </li>
+            <li id="friday">
+              <div class="bar"></div>
+              fri
+            </li>
+            <li id="saturday">
+              <div class="bar"></div>
+              sat
+            </li>
+            <li id="sunday">
+              <div class="bar"></div>
+              sun
+            </li>
+          </ul>
+        </div>
+        <div class="balance-this-month">
+          <div>
+            Total this month
+            <span>$478.33</span>
+          </div>
+          <div>
+            <span>+2.4%</span>
+            from last month
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
