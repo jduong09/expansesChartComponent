@@ -92,6 +92,31 @@ body {
   background-color: hsl(10, 79%, 65%);
   border-radius: 3px;
   margin-bottom: .75rem;
+  position: relative;
+}
+
+.bar > div {
+  display: none;
+  width: 45px;
+  padding: .25rem;
+  position: absolute;
+  top: -30px;
+  left: -6px; 
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 3px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 12px;
+}
+
+.bar:hover {
+  background-color: hsla(10, 79%, 65%, .5);
+  cursor: pointer;
+}
+
+.bar:hover > div {
+  display: block;
+  opacity: 1;
 }
 
 #monday > .bar {
@@ -105,6 +130,10 @@ body {
 #wednesday > .bar {
   height: 160px;
   background-color: hsl(186, 34%, 60%);
+}
+
+#wednesday > .bar:hover {
+  background-color: hsla(186, 34%, 60%, .5);
 }
 
 #thursday > .bar {
